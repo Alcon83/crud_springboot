@@ -1,0 +1,18 @@
+<h2 class="mb-5">Nuevo Contacto</h2>
+
+<div class="row row-cols-3 justify-content-center">
+    <form [formGroup]="form" (ngSubmit)="create()">
+        <div class="mb-3">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" placeholder="Nombre" class="form-control" formControlName="name">
+        </div>
+        <div class="mb-3">
+            <label for="email">email</label>
+            <input type="email" id="email" placeholder="email" class="form-control" formControlName="email">
+        </div>
+        <div class="text-end">
+            <button type="button" class="btn btn-light" routerLink="/">Cancelar</button>
+            <button class="btn btn-primary ms-2">Crear Contacto</button>
+        </div>
+    </form>
+</div>
